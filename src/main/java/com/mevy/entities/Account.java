@@ -5,9 +5,17 @@ import lombok.Getter;
 @Getter
 public abstract class Account implements IAccount{
     
-    private int branch;
-    private int number;
-    private double balance;
+    private static final int STANDARD_BRANCH = 1;
+    private static int SEQUENCE = 1;
+
+    protected int branch;
+    protected int number;
+    protected double balance;
+
+    public Account() {
+        this.branch = STANDARD_BRANCH;
+        this.number = SEQUENCE++;
+    }
 
     public void withdraw(double value) {
         

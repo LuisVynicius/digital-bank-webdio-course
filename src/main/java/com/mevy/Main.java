@@ -1,7 +1,9 @@
 package com.mevy;
 
+import com.mevy.entities.CheckingAccount;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CheckingAccount c = new CheckingAccount();
     }
 }
