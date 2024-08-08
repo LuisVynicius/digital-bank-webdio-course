@@ -1,4 +1,6 @@
-package com.mevy.entities;
+package com.mevy.entities.interfaces;
+
+import com.mevy.entities.Account;
 
 public interface IAccount {
     
@@ -8,4 +10,5 @@ public interface IAccount {
 
     void transfer(double valor, Account account);
 
+    void printStatement();
 }
