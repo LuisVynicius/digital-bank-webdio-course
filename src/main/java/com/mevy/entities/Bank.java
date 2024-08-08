@@ -1,7 +1,10 @@
 package com.mevy.entities;
 
+import lombok.Getter;
+
+@Getter
 public class Bank {
     
-    public String name;
+    private String name;
 
 }

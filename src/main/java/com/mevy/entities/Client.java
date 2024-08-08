@@ -1,7 +1,10 @@
 package com.mevy.entities;
 
+import lombok.Getter;
+
+@Getter
 public class Client {
     
-    public String name;
+    private String name;
 
 }
